@@ -56,3 +56,7 @@
     padding: 0;
     text-align: left;
 }
+
+.about-me li{
+    margin-top: 10px;
+}
