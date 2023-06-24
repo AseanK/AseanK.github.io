@@ -1,12 +1,14 @@
 /** ADD YOUR AWESOME CODES HERE **/
 .container1 .card{
     position: relative;
+    background-color: #f1f1f1;
 }
 
 .container1 .card .face{
     transition: 0.5s;
     display: block;
     justify-content: center;
+    background-color: #f1f1f1;
 }
 
 .container1 .card .face.face1{
@@ -34,6 +36,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
 }
 
 .container1 .card .face.face2{
