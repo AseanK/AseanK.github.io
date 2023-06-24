@@ -69,7 +69,7 @@
         </div>
     </nav>
 	<div class="justify-content-center">
-	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
+	<section id="home" class="main-banner parallaxie" style="background: url('uploads/moon.jpg')">
 		<div class="heading">
 			<h1>Hello, world! I'm</h1>
 			<h1 class="typewrite" data-period="2000"
@@ -97,17 +97,19 @@
                 </div><!-- end col -->
 
                 <div class="col-md-6">
+					<h3>Languages I Work With</h3>
 					<div class="language-carousel">
-            			<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="80px"/></div>
-						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width="80px" /></div>
-						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80px" /></div>
-						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px" /></div>
-						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="80px" /></div>
-						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" width="80px" /></div>
-						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80px" /></div>
-						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="80px" /></div>
-						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="80px" /></div>
-						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width="80px" /></div>
+            			<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="80px"/></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width="80px" /></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" width="80px" /></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80px" /></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px" /></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="80px" /></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" width="80px" /></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80px" /></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="80px" /></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="80px" /></div>
+						<div class="slider-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width="80px" /></div>
                 	</div>
 				</div><!-- end col -->
             </div><!-- end row -->
@@ -132,7 +134,7 @@
 						<div class="card">
 							<div class="face face1">
 								<div class="content">
-									<img src="uploads/mit_cert.jpg" class="mit-cert">
+									<img src="uploads/mit_cert-PhotoRoom.png-PhotoRoom.png" class="mit-cert">
 								</div>
 							</div>
 							<div class="face face2">
@@ -149,7 +151,7 @@
 						<div class="card">
 							<div class="face face1">
 								<div class="content">
-									<img src="uploads/ccna_large.jpg" width="60%">
+									<img src="uploads/ccna_large-PhotoRoom.png-PhotoRoom.png" width="60%">
 								</div>
 							</div>
 							<div class="face face2">
@@ -166,7 +168,7 @@
 						<div class="card">
 							<div class="face face1">
 								<div class="content">
-									<img src="uploads/SecurityPlus Logo Certified CE Black.png" width="60%">
+									<img src="uploads/SecurityPlus Logo Certified CE White.png" width="60%">
 								</div>
 							</div>
 							<div class="face face2">
@@ -294,21 +296,16 @@
 		$(document).ready(function(){
 			$('.language-carousel').slick({
 			  dots: false,
-			  arrows: true,
+			  arrows: false,
 			  infinite: true,
-			  speed: 300,
+			  speed: 2000,
 			  slidesToShow: 4,
 			  slidesToScroll: 1,
 			  autoplay: true,
-			  autoplaySpeed: 1500,
-			  responsive: [
-				{
-				  breakpoint: 480,
-				  settings: {
-					slidesToShow: 3
-				  }
-				}
-			  ]
+			  autoplaySpeed: 0,
+			  useTransform: false,
+			  pauseOnHover: true,
+			  cssEase: 'linear',
 			});
 		});
 		</script>

@@ -1,14 +1,16 @@
 /** ADD YOUR AWESOME CODES HERE **/
 .container1 .card{
     position: relative;
-    background-color: #f1f1f1;
+    background-color: #fff;
+    border-radius: 40px;
 }
 
 .container1 .card .face{
     transition: 0.5s;
     display: block;
     justify-content: center;
-    background-color: #f1f1f1;
+    background-color: #fff;
+    border-radius: 40px;
 }
 
 .container1 .card .face.face1{
@@ -41,7 +43,7 @@
 
 .container1 .card .face.face2{
     position: relative;
-    background: #fff;
+    background-color: #333333;
     display: flex;
     padding: 20px;
     box-sizing: border-box;
@@ -62,4 +64,16 @@
 
 .about-me li{
     margin-top: 10px;
+}
+
+#about{
+    background-color: #242424;
+}
+
+#blog{
+    background-color: #242424;
+}
+
+#portfolio{
+    background-color: #242424;
 }
