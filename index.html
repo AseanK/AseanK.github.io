@@ -14,6 +14,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -83,7 +85,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="section-title text-left">                        
-                        <h3>About Me.</h3>
+						<h3>About Me.</h3>
 						<ul class="about-me">
 							<li>A <b>passionate</b> coder who loves <b>learning</b> and <b>exploring</b> new technologies.</li>
 							<li>Currently, I'm focused on honing my skills in <b>Go Lang</b> and <b>Docker</b>, two <b>powerful</b> tools that enable efficient development and deployment of applications..</li>
@@ -91,21 +93,23 @@
 							<li>I enjoy simplifying tasks through automation, building engaging web experiences, developing innovative tools, and contributing to secure solutions.</li>
 							<li>Let's <b>collaborate</b> on exciting projects and push the boundaries of technology together!</li>
 						</ul>
-					</div><!-- end messagebox -->
+                    </div><!-- end messagebox -->
                 </div><!-- end col -->
 
                 <div class="col-md-6">
-            		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="80px"/>
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width="80px" />
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80px" />
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px" />
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="80px" />
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" width="80px" />
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80px" />
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="80px" />
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="80px" />
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width="80px" />
-                </div><!-- end col -->
+					<div class="language-carousel">
+            			<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="80px"/></div>
+						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width="80px" /></div>
+						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80px" /></div>
+						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px" /></div>
+						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="80px" /></div>
+						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" width="80px" /></div>
+						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80px" /></div>
+						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="80px" /></div>
+						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="80px" /></div>
+						<div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width="80px" /></div>
+                	</div>
+				</div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
@@ -269,7 +273,7 @@
 
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-    <!-- ALL JS FILES -->
+	<!-- ALL JS FILES -->
     <script src="js/all.js"></script>
 	<!-- Camera Slider -->
 	<script src="js/jquery.mobile.customized.min.js"></script>
@@ -283,6 +287,31 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+		$(document).ready(function(){
+			$('.language-carousel').slick({
+			  dots: false,
+			  arrows: true,
+			  infinite: true,
+			  speed: 300,
+			  slidesToShow: 4,
+			  slidesToScroll: 1,
+			  autoplay: true,
+			  autoplaySpeed: 1500,
+			  responsive: [
+				{
+				  breakpoint: 480,
+				  settings: {
+					slidesToShow: 3
+				  }
+				}
+			  ]
+			});
+		});
+		</script>
 
 </body>
 </html>
