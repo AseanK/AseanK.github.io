@@ -20,6 +20,7 @@
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<script src="/js/slick.js"></script>
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -79,7 +80,7 @@
         </div>
     </nav>
 	<div class="justify-content-center">
-		<div id="particles-js" style="z-index: 100;"></div>
+		<!-- <div id="particles-js" style="z-index: 2;"></div> -->
 
 	<section id="home" class="main-banner parallaxie" style="background: url('uploads/moon.jpg')">
 		<div class="heading">
@@ -100,7 +101,7 @@
 						<h3>About Me.</h3>
 						<ul class="about-me">
 							<li><span class="fa-li"><i class="fa fa-code"></i></span>A <b>passionate</b> coder who loves <b>learning</b> and <b>exploring</b> new technologies.</li>
-							<li><span class="fa-li"><i class="fa fa-code"></i></span>Currently, I'm focused on honing my skills in <b>Go Lang</b> and <b>Docker</b>, two <b>powerful</b> tools that enable efficient development and deployment of applications..</li>
+							<li><span class="fa-li"><i class="fa fa-code"></i></span>Currently, I'm focused on honing my skills in <b>Go Lang</b> and <b>Docker</b>, two <b>powerful</b> tools that enable efficient development and deployment of applications.</li>
 							<li><span class="fa-li"><i class="fa fa-code"></i></span>My interests span <b>automation</b>, <b>web development</b>, <b>creative tools</b>, and <b>security</b>.</li>
 							<li><span class="fa-li"><i class="fa fa-code"></i></span>I enjoy simplifying tasks through automation, building engaging web experiences, developing innovative tools, and contributing to secure solutions.</li>
 							<li><span class="fa-li"><i class="fa fa-code"></i></span>Let's <b>collaborate</b> on exciting projects and push the boundaries of technology together!</li>
@@ -168,9 +169,9 @@
 			<!-- SKILLS -->
 			<div class="row">
 				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="container1">
+					<div class="container1 fade">
 						<div class="card">
-							<div class="face face1">
+							<div class="face face1" style="z-index: 5;">
 								<div class="content">
 									<img src="uploads/mit_cert.jpg" class="mit-cert">
 								</div>
@@ -185,9 +186,9 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="container1">
+					<div class="container1 fade">
 						<div class="card">
-							<div class="face face1">
+							<div class="face face1" style="z-index: 5;">
 								<div class="content">
 									<img src="uploads/ccna_large.jpg" width="60%">
 								</div>
@@ -202,9 +203,9 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="container1">
+					<div class="container1 fade">
 						<div class="card">
-							<div class="face face1">
+							<div class="face face1" style="z-index: 5;">
 								<div class="content">
 									<img src="uploads/SecurityPlus Logo Certified CE White.png" width="60%">
 								</div>
@@ -324,25 +325,7 @@
     <script src="js/custom.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-		$(document).ready(function(){
-			$('.language-carousel').slick({
-			  dots: false,
-			  arrows: false,
-			  infinite: true,
-			  speed: 2000,
-			  slidesToShow: 4,
-			  slidesToScroll: 1,
-			  autoplay: true,
-			  autoplaySpeed: 0,
-			  useTransform: false,
-			  pauseOnHover: true,
-			  cssEase: 'linear',
-			});
-		});
-		</script>
 
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>
