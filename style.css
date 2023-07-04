@@ -292,7 +292,7 @@ a img.aligncenter {
     text-decoration: none;
     top: 5px;
     width: auto;
-    z-index: 100000;
+    z-index: 1;
     /* Above WP toolbar. */
 }
 
@@ -1649,7 +1649,7 @@ select.mobile-device {
     bottom: 0;
     left: 0;
     background: #333333;
-    z-index: 11000;
+    z-index: 1;
     position: fixed;
     display: block
 }
