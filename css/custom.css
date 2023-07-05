@@ -32,70 +32,68 @@
     height: 100%;
 }
 
-.container1 .card{
-    position: relative;
-    background-color: #242424;
-    border-radius: 40px;
+/********************* CARD ******************/
+.card {
+    position: relative; 
+    display: grid;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0);
+    border-width: 0;
+    opacity: 0;
+    transition: opacity 0.5s, transform 1s ease-in-out;
 }
-
-.container1 .card .face{
-    transition: 0.5s;
-    display: block;
+.face {
     justify-content: center;
-    background-color: #242424;
-    border-radius: 40px;
-}
-
-.container1 .card .face.face1{
-    position: relative;
-    display: flex;
-    z-index: 1;
-    transform: translateY(20px);
-}
-
-.container1 .card:hover .face.face1{
-    transform: translateY(0);
-}
-
-.container1 .card .face.face1 .content{
-    opacity: 0.8;
+    z-index: 3;
     transition: 0.5s;
+    position: relative; 
+    display: flex;
+}
+.face1{
+    position: relative;
+    transform: translateY(20px);
+    display: flex;
     background-color: #fff;
+    border-radius: 20px;
+    filter: grayscale(0.8);
 }
-
-.container1 .card:hover .face.face1 .content{
-    opacity: 1;
-}
-
-.container1 .card .face.face1 .content img{
+.face1 img{
     max-width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    transition: 0.5s;
     border-radius: 20px;
 }
 
-.container1 .card .face.face2{
-    position: relative;
-    background-color: #333333;
-    display: flex;
-    padding: 20px;
-    box-sizing: border-box;
-    transform: translateY(-100%);
-    opacity: 0;
-}
-
-.container1 .card:hover .face.face2{
+.card:hover .face1 {
     transform: translateY(0);
+    filter: grayscale(0);
     opacity: 1;
 }
 
-.container1 .card .face.face2 .content p{
-    margin: 0;
-    padding: 0;
-    text-align: left;
+.face2{
+    position: relative;
+    display: flex;
+    padding: 25px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition : 0.3s ease-in-out;
+    color: #fff;
+}
+.card:hover .face2{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
 
+.card.visible {
+    opacity: 1;
+}
+
+
+
+/* ABOUT */
 .about-me li{
     margin-top: 10px;
 }
@@ -110,4 +108,17 @@
 
 #portfolio{
     background-color: #242424;
+}
+
+.about-me li{
+    color: #fff;
+    z-index: 3;
+}
+
+.lang img {
+    z-index: 3;
+}
+
+.sort-btn button{
+    z-index: 3;
 }
