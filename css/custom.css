@@ -1,4 +1,3 @@
-/** ADD YOUR AWESOME CODES HERE **/
 .floating-object-container {
     position: relative;
     top: 50%;
@@ -40,7 +39,7 @@
     background: rgba(255, 255, 255, 0);
     border-width: 0;
     opacity: 0;
-    height: 450px;
+    height: fit-content;
     transition: opacity 0.5s, transform 1s ease-in-out;
 }
 .card.visible {
@@ -70,8 +69,7 @@
     display: flex;
     background-color: #fff;
     border-radius: 20px;
-    filter: grayscale(0.8);
-    max-height: 226px;
+    max-height: 240px;
 }
 .face1 img{
     margin: auto;
@@ -80,7 +78,6 @@
 }
 
 .card:hover .face1 {
-    filter: grayscale(0);
     opacity: 1;
 }
 
@@ -94,10 +91,32 @@
     transition : 0.3s ease-in-out;
     color: #fff;
 }
+
+.face2 li{
+    padding-bottom: 12px;
+}
+
 .card:hover .face2{
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+}
+@media only screen and (min-width: 1199px) and (max-width: 2140px) {
+    .face1{
+        max-height: 220px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .face1{
+        max-height: 160px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .face1{
+        max-height: 120px;
+    }
 }
 
 

@@ -1,7 +1,8 @@
 var cards = document.querySelectorAll('.card');
 
 function isInViewport(element) {
-  var rect = element.getBoundingClientRect();
+  var face1 = element.querySelector('.face1'); // Get the face1 element inside the card
+  var rect = face1.getBoundingClientRect(); // Use the face1 element's bounding rectangle
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
