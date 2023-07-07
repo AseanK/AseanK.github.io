@@ -5,7 +5,12 @@
 	font-size: 52px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.filter-button-group button{
+		font-size: 10px;
+		padding: 12px 27px;
+	}
+}
 @media (min-width: 768px) and (max-width: 991px) {
 	.heading h1{
 		font-size: 38px;
@@ -27,6 +32,7 @@
 		margin-bottom: 30px;
 	}
 	.filter-button-group button{
+		font-size: 8px;
 		padding: 12px 27px;
 	}
 	.filter-button-group{
@@ -63,6 +69,7 @@
 		padding: 12px 27px;
 	}
 	.filter-button-group{
+		display: inline-block;
 		text-align: center !important;
 	}
 	.post-box{
