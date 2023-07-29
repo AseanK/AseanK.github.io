@@ -20,35 +20,11 @@ body {
     line-height: 1.80857;
 }
 
+
+
 html, body{
 	height: 100%;
-}
-
-body.demos .section {
-    background: url(images/bg.png) repeat top center #f2f3f5;
-}
-
-body.demos .section-title img {
-    max-width: 280px;
-    display: block;
-    margin: 10px auto;
-}
-
-body.demos .service-widget h3 {
-    border-bottom: 1px solid #ededed;
-    font-size: 18px;
-    padding: 20px 0;
-    background-color: #ffffff;
-}
-
-body.demos .service-widget {
-    margin: 0 0 30px;
-    padding: 30px;
-    background-color: #fff
-}
-
-body.demos .container-fluid {
-    max-width: 1080px
+    background-color: #242424;
 }
 
 a {
@@ -147,14 +123,6 @@ a,
     font-size: 16px;
 }
 
-.lead {
-    font-size: 18px;
-    line-height: 30px;
-    color: #767676;
-    margin: 0;
-    padding: 0;
-}
-
 blockquote {
     margin: 20px 0 20px;
     padding: 30px;
@@ -165,128 +133,6 @@ ul, li, ol{
 	list-style: none;
 	padding: 0px;
     color: #FFF;
-}
-
-
-/*------------------------------------------------------------------
-    WP CORE
--------------------------------------------------------------------*/
-
-.first {
-    clear: both
-}
-
-.last {
-    margin-right: 0
-}
-
-.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-
-.alignright {
-    float: right;
-    margin: 10px 0 20px 20px;
-}
-
-.alignleft {
-    float: left;
-    margin: 10px 20px 20px 0;
-}
-
-a img.alignright {
-    float: right;
-    margin: 10px 0 20px 20px;
-}
-
-a img.alignnone {
-    margin: 10px 20px 20px 0;
-}
-
-a img.alignleft {
-    float: left;
-    margin: 10px 20px 20px 0;
-}
-
-a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%;
-    /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
-}
-
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignright {
-    margin: 5px 0 20px 20px;
-}
-
-.wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
-}
-
-.wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
-}
-
-
-/* Text meant only for screen readers. */
-
-.screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-}
-
-.screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 1;
-    /* Above WP toolbar. */
 }
 
 
@@ -331,15 +177,13 @@ a img.aligncenter {
 -------------------------------------------------------------------*/
 
 .main-banner{
-	height: 100%;
+	height: 100vh;
 	position: relative;
-}
-
-.main-banner{
-	display: table;
+    display: table;
     width: 100%;
 	text-align: center;
 }
+
 .main-banner::after {
     content: " ";
     position: absolute;
@@ -370,285 +214,7 @@ a img.aligncenter {
 }
 
 .heading h3{
-	color: ffffff;
-}
-
-.cd-words-wrapper {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-}
-.cd-words-wrapper b {
-  display: inline-block;
-  position: absolute;
-  white-space: nowrap;
-  left: 0;
-  top: 0;
-}
-.cd-words-wrapper b.is-visible {
-  position: relative;
-}
-.no-js .cd-words-wrapper b {
-  opacity: 0;
-}
-.no-js .cd-words-wrapper b.is-visible {
-  opacity: 1;
-}
-
-/* -------------------------------- 
-
-xclip 
-
--------------------------------- */
-.cd-headline.clip span {
-  display: inline-block;
-  padding: .2em 0;
-  color: #ffffff;
-  font-size: 30px;
-}
-.cd-headline.clip span b{
-	text-transform: uppercase;
-}
-.cd-headline.clip .cd-words-wrapper {
-  overflow: hidden;
-  vertical-align: top;
-}
-.cd-headline.clip .cd-words-wrapper::after {
-  /* line */
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background-color: #aebcb9;
-}
-.cd-headline.clip b {
-  opacity: 0;
-}
-.cd-headline.clip b.is-visible {
-  opacity: 1;
-}
-
-#mainNav{
-    transition: 0.5s ease-in-out;
-}
-#mainNav.navbar-shrink {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #333333;
-}
-
-.section {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    padding: 70px 0;
-}
-
-.noover {
-    overflow: visible;
-}
-
-.noover .btn-dark {
-    border: 0 !important;
-}
-
-.nopad {
-    padding: 0;
-}
-
-.nopadtop {
-    padding-top: 0;
-}
-
-.section.wb {
-    background-color: #ffffff;
-}
-
-.section.lb {
-    background-color: #f2f3f5;
-}
-
-.section.db {
-    background-color: #111111;
-}
-
-.section.color1 {
-    background-color: #448AFF;
-}
-
-.first-section {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    padding: 16em 0 13em;
-}
-
-.first-section h2 {
-    color: #ffffff;
-    font-size: 68px;
-    font-weight: 300;
-    text-transform: capitalize;
-    display: block;
-    margin: 0;
-    padding: 0 0 30px;
-    position: relative;
-}
-
-.first-section .lead {
-    font-size: 21px;
-    font-weight: 300;
-    padding: 0 0 40px;
-    margin: 0;
-    line-height: inherit;
-    color: #ffffff;
-}
-
-.macbookright {
-    width: 980px;
-    position: absolute;
-    right: -15%;
-    bottom: -6%;
-}
-
-.section-title {
-    z-index: 3;
-    display: block;
-    position: relative;
-    margin-bottom: 60px;
-    background-color: #242424;
-}
-
-.section-title p {
-    color: #fff;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 33px;
-    margin: 0;
-}
-
-.section-title h3 {
-    font-size: 38px;
-    font-weight: 500;
-    line-height: 62px;
-    margin: 0 0 25px;
-    padding: 0;
-    text-transform: none;
-}
-
-.section.colorsection p,
-.section.colorsection h3,
-.section.db h3 {
-    color: #ffffff;
-}
-
-
-
-.btn-hover-new{
-	color: #333333;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-	position: relative;
-	border: 1px solid #333333;
-	overflow: hidden;
-	padding: 0px 18px;
-	display: inline-block;
-}
-
-.sim-btn{
-	line-height: 50px;
-	height: 50px;
-	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 0px;
-	cursor: pointer;
-}
-
-.btn-hover-new::after {
-    content: attr(data-text);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    -webkit-transform: translate(-30%, 0);
-    transform: translate(-30%, 0);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.btn-hover-new span {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.btn-hover-new:hover{
 	color: #ffffff;
-	background-color: #333333;
-}
-.btn-hover-new:hover > span {
-    opacity: 0;
-    -webkit-transform: translate(0px,40px);
-    transform: translate(0px,40px);
-}
-.btn-hover-new:hover::after {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-
-
-
-
-.right-box-pro{
-	position: relative;
-	-webkit-box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.3);
-}
-.right-box-pro img{
-	position: relative;
-	z-index: 2;
-}
-.right-box-pro::before {
-    content: "";
-    background: url(images/country-quilt-dark.png);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    z-index: 0;
-}
-
-
-
-.services-inner-box{
-	padding: 15px;
-	background: #ffffff;
-	margin-bottom: 30px;
-}
-.ser-icon{
-	width: 90px;
-	height: 90px;
-	text-align: center;
-	line-height: 90px;
-}
-.ser-icon i{
-	font-size: 50px;
-	color: #333333;
-}
-.services-inner-box h2{
-	font-size: 22px;
-	font-weight: 600;
 }
 
 
@@ -782,9 +348,6 @@ xclip
     line-height: 40px;
     text-align: center;
 }
-
-
-
 
 
 /* Highlighted table */
