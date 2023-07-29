@@ -9,15 +9,46 @@
 
 (function( $ ){
 
+    var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+			BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+			iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+			Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+			Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+			any: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+
     $.fn.parallaxie = function( options ){
 
-        var options = $.extend({
-            speed: 0.5,
-            repeat: 'no-repeat',
-            size: 'cover',
-            pos_x: 'center',
-            offset: 0,
-        }, options );
+        if (isMobile.any()) {
+            var options = $.extend({
+                speed: 0.5,
+                repeat: 'no-repeat',
+                size: 'cover',
+                pos_x: 'center',
+                offset: 200,
+            }, options );
+        } else {
+            var options = $.extend({
+                speed: 0.5,
+                repeat: 'no-repeat',
+                size: 'cover',
+                pos_x: 'center',
+                offset: 0,
+            }, options );
+        }
 
         this.each(function(){
 
