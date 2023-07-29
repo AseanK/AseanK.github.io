@@ -38,7 +38,7 @@
                 repeat: 'no-repeat',
                 size: 'cover',
                 pos_x: 'center',
-                offset: -500,
+                offset: -1500,
             }, options );
         } else {
             var options = $.extend({
