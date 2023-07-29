@@ -36,10 +36,10 @@
             var options = $.extend({
                 speed: 0.5,
                 repeat: 'no-repeat',
-                size: 'contain',
+                size: 'cover',
                 pos_x: 'center',
                 pos_y: 'center',
-                offset: -70,
+                offset: -100,
             }, options );
         } else {
             var options = $.extend({
