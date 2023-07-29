@@ -39,7 +39,7 @@
                 size: 'contain',
                 pos_x: 'center',
                 pos_y: 'center',
-                offset: 0,
+                offset: -70,
             }, options );
         } else {
             var options = $.extend({
