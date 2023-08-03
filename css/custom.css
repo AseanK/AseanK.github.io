@@ -67,7 +67,7 @@
 .face1{
     position: relative;
     display: flex;
-    background-color: #fff;
+    background-color: #fff !important;
     border-radius: 20px;
     max-height: 240px;
 }
