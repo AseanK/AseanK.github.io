@@ -509,10 +509,6 @@ ul, li, ol{
     transform: translateY(0);
 }
 
-.gallery-list .gallery-single:hover .img-overlay .hoverbutton{
-	opacity: 1;
-	top: 50%;
-}
 
 /*------------------------------------------------------------------
     FEATURES
