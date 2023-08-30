@@ -1,344 +1,532 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
-    <head>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:fb="http://ogp.me/ns/fb#"
+>
+  <head>
     <!-- Basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
-	<!-- Preview -->
-	<meta property="og:image" content="https://i.imgur.com/YzZWJug.jpg" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-	<link rel="icon" href="uploads/port-logo.png">
-	<link rel="shortcut icon" href="uploads/port-logo.png"/>
-     <!-- Site Metas -->
-    <title>Sean Kim - Portfolio</title>  
+    <!-- Preview -->
+    <meta property="og:image" content="https://i.imgur.com/YzZWJug.jpg" />
 
-	<!-- SlickCarousel -->
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="icon" href="uploads/port-logo.png" />
+    <link rel="shortcut icon" href="uploads/port-logo.png" />
+    <!-- Site Metas -->
+    <title>Sean Kim - Portfolio</title>
+
+    <!-- SlickCarousel -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <!-- Site Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
-	<!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/custom.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-
-
-</head>
-<body id="page-top">
-
-	<div id="particles-js" style="z-index: 2; overflow-y: hidden;"></div>
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+  </head>
+  <body id="page-top">
+    <div id="particles-js" style="z-index: 2; overflow-y: hidden"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand navbar-dark fixed-top" id="mainNav">
-        <div class="container-fluid justify-content-center" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+      <div class="container-fluid justify-content-center" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#blog">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="justify-content-center">
+      <section
+        id="home"
+        class="main-banner parallaxie"
+        style="background: url('uploads/moon.jpg')"
+      >
+        <div class="heading">
+          <h1>Hello, world! I'm</h1>
+          <h1
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "Sean Kim.", "a Developer.", "a software engineer.", "Innovative.", "Dedicated.", "Adaptable.", "Self-motivated" ]'
+          ></h1>
+        </div>
+      </section>
+    </div>
+
+    <hr class="m-5" />
+
+    <div id="about" class="section lb">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="section-title text-left">
+              <h3>About Me</h3>
+              <ul class="about-me fa-ul">
+                <li>
+                  <span class="fa-li"><i class="fa fa-code"></i></span>A
+                  passionate coder who loves learning and exploring new
+                  technologies.
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fa fa-code"></i></span
+                  >Currently, I'm focused on honing my skills in Go Lang and
+                  Docker, two powerful tools that enable efficient development
+                  and deployment of applications.
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fa fa-code"></i></span>My
+                  interests span automation, web development, creative tools,
+                  and security.
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fa fa-code"></i></span>I enjoy
+                  simplifying tasks through automation, building engaging web
+                  experiences, developing innovative tools, and contributing to
+                  secure solutions.
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fa fa-code"></i></span>Let's
+                  collaborate on exciting projects and push the boundaries of
+                  technology together!
+                </li>
+              </ul>
+            </div>
+            <!-- end messagebox -->
+          </div>
+          <!-- end col -->
+
+          <div class="col-md-6">
+            <h3>Languages I Work With</h3>
+            <div class="row lang">
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg"
+                  width="80px"
+                  alt="Floating Globe"
+                  class="floating-object"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end section -->
+
+    <hr class="m-5" />
+
+    <div id="blog" class="section lb">
+      <div class="container">
+        <div class="section-title text-left mb-5">
+          <h3>Skills</h3>
+          <ul class="about-me fa-ul">
+            <li>
+              <span class="fa-li"><i class="fa fa-code"></i></span>Strong
+              foundation in Python, JavaScript, HTML, and CSS.
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <li>
+              <span class="fa-li"><i class="fa fa-code"></i></span>Ongoing
+              learning in Go Lang and Docker further enhances my skill set.
             </li>
-			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#blog">Skills</a>
-			</li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <li>
+              <span class="fa-li"><i class="fa fa-code"></i></span>Participated
+              in various hackathons, demonstrating my ability to deliver
+              innovative solutions within tight deadlines.
             </li>
           </ul>
         </div>
-    </nav>
+        <!-- end title -->
 
-	<div class="justify-content-center">
-	<section id="home" class="main-banner parallaxie" style="background: url('uploads/moon.jpg')">
-		<div class="heading">
-			<h1>Hello, world! I'm</h1>
-			<h1 class="typewrite" data-period="2000"
-				data-type='[ "Sean Kim.", "a Developer.", "a software engineer.", "Innovative.", "Dedicated.", "Adaptable.", "Self-motivated" ]'>
-		</h1>
-			
-		</div>
-	</section>
-	</div>
+        <!-- SKILLS -->
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="face face1 floating-object">
+                <img src="uploads/mit_cert_600x300.jpg" />
+              </div>
+              <div class="face face2">
+                <ul>
+                  <li class="text-center">
+                    Professional Certificate in Coding: Full Stack Development
+                  </li>
+                  <li>Massachusetts Institute of Technology - MIT</li>
+                  <li>Associated skills: Full stack web development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-	<hr class="m-5"/>
+          <div class="col-md-4 col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="face face1 floating-object">
+                <img src="uploads/New-Cisco-CCNA_600x300.jpg" />
+              </div>
+              <div class="face face2">
+                <ul>
+                  <li class="text-center">CCNA 200-301</li>
+                  <li>Cisco</li>
+                  <li>
+                    Associated skills: networking - IP services, security,
+                    automation and programmability
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-    <div id="about" class="section lb">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="section-title text-left">                        
-						<h3>About Me</h3>
-						<ul class="about-me fa-ul">
-							<li><span class="fa-li"><i class="fa fa-code"></i></span>A passionate coder who loves learning and exploring new technologies.</li>
-							<li><span class="fa-li"><i class="fa fa-code"></i></span>Currently, I'm focused on honing my skills in Go Lang and Docker, two powerful tools that enable efficient development and deployment of applications.</li>
-							<li><span class="fa-li"><i class="fa fa-code"></i></span>My interests span automation, web development, creative tools, and security.</li>
-							<li><span class="fa-li"><i class="fa fa-code"></i></span>I enjoy simplifying tasks through automation, building engaging web experiences, developing innovative tools, and contributing to secure solutions.</li>
-							<li><span class="fa-li"><i class="fa fa-code"></i></span>Let's collaborate on exciting projects and push the boundaries of technology together!</li>
-						</ul>
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
+          <div class="col-md-4 col-sm-6 col-lg-4">
+            <div class="card">
+              <div class="face face1 floating-object">
+                <img
+                  src="uploads/SecurityPlus_Logo_Certified_CE_300x300.png"
+                  width="50%"
+                />
+              </div>
+              <div class="face face2">
+                <ul>
+                  <li class="text-center">Security+</li>
+                  <li>CompTIA</li>
+                  <li>
+                    Associated skills: Security - Compliant with ISO 17024
+                    standards and approved by the U.S. DoD to meet directive
+                    8140/8570.01-M requirements.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-				<div class="col-md-6">
-					<h3>Languages I Work With</h3>
-					<div class="row lang">
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-						<div class="col-4">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" width="80px" alt="Floating Globe" class="floating-object">
-						</div>
-					</div>
-				</div><!-- end col -->
-				
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
+    <hr class="m-5" />
 
-	<hr class="m-5"/>
+    <!-- PROJECTS -->
+    <div id="portfolio" class="section lb">
+      <div class="container">
+        <div class="section-title text-left mb-5">
+          <h3>Projects</h3>
+          <ul class="about-me">
+            <li>Following is a list of projects I have worked on</li>
+          </ul>
+        </div>
+        <!-- end title -->
 
-	<div id="blog" class="section lb">
-		<div class="container">
-			<div class="section-title text-left mb-5">
-                <h3>Skills</h3>
-				<ul class="about-me fa-ul">
-                	<li><span class="fa-li"><i class="fa fa-code"></i></span>Strong foundation in Python, JavaScript, HTML, and CSS.</li>
-					<li><span class="fa-li"><i class="fa fa-code"></i></span>Ongoing learning in Go Lang and Docker further enhances my skill set.</li>
-					<li><span class="fa-li"><i class="fa fa-code"></i></span>Participated in various hackathons, demonstrating my ability to deliver innovative solutions within tight deadlines.</li>
-				</ul>
-            </div><!-- end title -->
-			
-			<!-- SKILLS -->
-			<div class="row">
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="card">
-						<div class="face face1 floating-object">
-							<img src="uploads/mit_cert_600x300.jpg">
-						</div>
-						<div class="face face2">
-							<ul>
-								<li class="text-center">Professional Certificate in Coding: Full Stack Development</li>
-								<li>Massachusetts Institute of Technology - MIT</li>
-								<li>Associated skills: Full stack web development</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="card">
-						<div class="face face1 floating-object">
-							<img src="uploads/New-Cisco-CCNA_600x300.jpg">
-						</div>
-						<div class="face face2">
-							<ul>
-								<li class="text-center">CCNA 200-301</li>
-								<li>Cisco</li>
-								<li>Associated skills: networking - IP services, security, automation and programmability</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="card">
-						<div class="face face1 floating-object">
-							<img src="uploads/SecurityPlus_Logo_Certified_CE_300x300.png" width="50%">
-						</div>
-						<div class="face face2">
-							<ul>
-								<li class="text-center">Security+</li>
-								<li>CompTIA</li>
-								<li>Associated skills: Security - Compliant with ISO 17024 standards and approved by the U.S. DoD to meet directive 8140/8570.01-M requirements.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<hr class="m-5"/>
-
-	<!-- PROJECTS -->
-	<div id="portfolio" class="section lb">
-		<div class="container">
-			<div class="section-title text-left mb-5">
-                <h3>Projects</h3>
-                <ul class="about-me">
-					<li>Following is a list of projects I have worked on</li>
-				</ul>
-            </div><!-- end title -->
-			
-			<div class="gallery-menu row">
-				<div class="col-md-12">
-					<div class="button-group filter-button-group text-left sort-btn">
-						<button class="active" data-filter="*">All</button>
-						<button data-filter=".gal_a">Web Development</button>
-						<button data-filter=".gal_b">Creative Tools</button>
-						<button data-filter=".gal_c">Others</button>
-					</div>
-				</div>
-			</div>
-		<!-- 	1. Blog
+        <div class="gallery-menu row">
+          <div class="col-md-12">
+            <div class="button-group filter-button-group text-left sort-btn">
+              <button class="active" data-filter="*">All</button>
+              <button data-filter=".gal_a">Web Development</button>
+              <button data-filter=".gal_b">Creative Tools</button>
+              <button data-filter=".gal_c">Others</button>
+            </div>
+          </div>
+        </div>
+        <!-- 	1. Blog
 				2. Card UI
 				3. YEWON
 				4. NeighborWould
 				5. Password Manager
 				6.
 		-->
-			<div class="gallery-list row">
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
-					<div class="gallery-single fix">
-						<img src="uploads/neighbor.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<p>NeighborWould is a website designed to connect neighbors and keep them informed about local events.</p>
-							<a href="https://github.com/AseanK/Neighbor-Would">Learn more</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_b">
-					<div class="gallery-single fix">
-						<img src="uploads/passman.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<p>A graphical user interface (GUI) password manager application built with Python, allowing users to manage their passwords securely. </p>
-							<a href="https://github.com/AseanK/password_man">Learn more</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
-					<div class="gallery-single fix">
-						<img src="https://i.imgur.com/l9cWrxq.png" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<p>Single-page restaurant website.</p>
-							<a href="https://yewonkoreancuisine.com">Learn more</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
-					<div class="gallery-single fix">
-						<img src="uploads/python_tools.JPG" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<p>An open source project where developers create, play, and learn games and tools built with Python. </p>
-							<a href="https://github.com/AseanK/python-tools-and-games">Learn more</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_c">
-					<div class="gallery-single fix">
-						<img src="uploads/apt-logo.png" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<p>An automation script designed to gather housing information from ApartmentFinder and automatically populate a Google Sheet with the collected data.</p>
-							<a href="https://github.com/AseanK/Automate-aptfinder">Learn more</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c">
-					<div class="gallery-single fix">
-						<img src="https://www.securitynewspaper.com/snews-up/2019/10/Icons_CTF.png" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<p>My individualized write-ups for Capture the Flag (CTF) in which I participated.</p>
-							<a href="https://github.com/AseanK/CTF_Write-ups">Learn more</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="gallery-list row">
+          <div class="col-md-4 col-sm-6 gallery-grid gal_a">
+            <div class="gallery-single fix">
+              <img src="uploads/neighbor.jpg" class="img-fluid" alt="Image" />
+              <div class="img-overlay">
+                <p>
+                  NeighborWould is a website designed to connect neighbors and
+                  keep them informed about local events.
+                </p>
+                <a href="https://github.com/AseanK/Neighbor-Would"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
 
-	<hr class="m-5"/>
+          <div class="col-md-4 col-sm-6 gallery-grid gal_b">
+            <div class="gallery-single fix">
+              <img src="uploads/passman.jpg" class="img-fluid" alt="Image" />
+              <div class="img-overlay">
+                <p>
+                  A graphical user interface (GUI) password manager application
+                  built with Python, allowing users to manage their passwords
+                  securely.
+                </p>
+                <a href="https://github.com/AseanK/password_man">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 gallery-grid gal_a">
+            <div class="gallery-single fix">
+              <img
+                src="https://i.imgur.com/l9cWrxq.png"
+                class="img-fluid"
+                alt="Image"
+              />
+              <div class="img-overlay">
+                <p>Single-page restaurant website.</p>
+                <a href="https://yewonkoreancuisine.com">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
+            <div class="gallery-single fix">
+              <img
+                src="uploads/python_tools.JPG"
+                class="img-fluid"
+                alt="Image"
+              />
+              <div class="img-overlay">
+                <p>
+                  An open source project where developers create, play, and
+                  learn games and tools built with Python.
+                </p>
+                <a href="https://github.com/AseanK/python-tools-and-games"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 gallery-grid gal_b gal_c">
+            <div class="gallery-single fix">
+              <img src="uploads/apt-logo.png" class="img-fluid" alt="Image" />
+              <div class="img-overlay">
+                <p>
+                  An automation script designed to gather housing information
+                  from ApartmentFinder and automatically populate a Google Sheet
+                  with the collected data.
+                </p>
+                <a href="https://github.com/AseanK/Automate-aptfinder"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 gallery-grid gal_c">
+            <div class="gallery-single fix">
+              <img
+                src="https://www.securitynewspaper.com/snews-up/2019/10/Icons_CTF.png"
+                class="img-fluid"
+                alt="Image"
+              />
+              <div class="img-overlay">
+                <p>
+                  My individualized write-ups for Capture the Flag (CTF) in
+                  which I participated.
+                </p>
+                <a href="https://github.com/AseanK/CTF_Write-ups">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 gallery-grid gal_c">
+            <div class="gallery-single fix">
+              <img
+                src="https://i.imgur.com/C1oyM23.png"
+                class="img-fluid"
+                alt="Image"
+              />
+              <div class="img-overlay">
+                <p>
+                  An application designed to enhance your WiFi security by
+                  identifying connected devices and enabling the user to manage
+                  potential threats and unwanted connections.
+                </p>
+                <a href="https://github.com/AseanK/ownet-scanner">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="m-5" />
 
     <div id="contact" class="section db parallaxie">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>Contact</h3>
-                <p>Let's stay connected!</p>
-            </div><!-- end title -->
-            <div class="icons">
-                <a href="https://github.com/AseanK" class="fa fa-github">Github</a>
-                <a href="#" class="fa fa-linkedin">LinkedIn</a>
-                <a href="mailto: seank8809@gmail.com" class="fa fa-envelope">Email</a>
-            </div>
-        </div><!-- end container -->
-    </div><!-- end section -->
+      <div class="container">
+        <div class="section-title text-left">
+          <h3>Contact</h3>
+          <p>Let's stay connected!</p>
+        </div>
+        <!-- end title -->
+        <div class="icons">
+          <a href="https://github.com/AseanK" class="fa fa-github">Github</a>
+          <a href="#" class="fa fa-linkedin">LinkedIn</a>
+          <a href="mailto: seank8809@gmail.com" class="fa fa-envelope">Email</a>
+        </div>
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end section -->
 
-	<footer>
-		
-	</footer>
+    <footer></footer>
 
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"
+      ><i class="fa fa-angle-up"></i
+    ></a>
 
-	<!-- JQuery -->
-	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"
+    ></script>
 
-	<script src="js/fade.js"></script>
-	<!-- ALL JS FILES -->
+    <script src="js/fade.js"></script>
+    <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
 
-	<!-- Camera Slider -->
-	<script src="js/jquery.easing.1.3.js"></script> 
-	<script src="js/parallaxie.js"></script>
-    <script src="js/type.js"></script> 
+    <!-- Camera Slider -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/type.js"></script>
 
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
 
-	<!-- SLICK -->
-	<script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- SLICK -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
-	<!-- PARTICLE -->
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script src="js/particle.js"></script>
+    <!-- PARTICLE -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particle.js"></script>
 
-	<!-- FLOAT -->
-	<script src="js/float.js"></script>
-
-</body>
+    <!-- FLOAT -->
+    <script src="js/float.js"></script>
+  </body>
 </html>
