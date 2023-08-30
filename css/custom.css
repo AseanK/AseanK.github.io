@@ -150,3 +150,13 @@
 .sort-btn button{
     z-index: 3;
 }
+
+/* Contact */
+
+#contact {
+    height: 40%;
+}
+
+#contact .container {
+    padding-top: 2em;
+}
